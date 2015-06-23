@@ -4,7 +4,7 @@
   <div class="panel-body">
     <div class="row">
 		  <div class="col-xs-10">
-	      <input type="text" class="form-control" placeholder="Enter a tag..." ng-model="search">
+	      <input type="text" class="form-control" placeholder="Search by tag..." ng-model="search">
 		  </div>
 		  <div class="col-xs-2">
 		    <button class="btn btn-success pull-right" type="button" ng-click="reload()"><i class="glyphicon glyphicon-refresh"></i></button>
@@ -14,6 +14,7 @@
 </div>
 
 <div class="row">
+	<div class="alert alert-danger" role="alert" ng-show="errorMessage">{{errorMessage}}</div>
   <div class="alert alert-info" role="alert" ng-show="isLoading">Loading Results...</div>
 </div>
 

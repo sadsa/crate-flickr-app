@@ -69,7 +69,11 @@ angular.module('crateFlickrApp')
 					$scope.photos = photos;
 					$scope.isLoading = false;
 
-        });
+        })
+    		.error(function(){
+    			$scope.errorMessage = 'Oops, something went wrong!';
+    			$scope.isLoading = false;
+    		});
     };
 
     $scope.reload = function(){
