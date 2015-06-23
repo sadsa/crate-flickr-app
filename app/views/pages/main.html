@@ -1,5 +1,5 @@
 
-
+<!-- Search Form and Reresh Button -->
 <div class="panel panel-default">
   <div class="panel-body">
     <div class="row">
@@ -13,11 +13,13 @@
   </div>
 </div>
 
+<!-- Alerts -->
 <div class="row">
 	<div class="alert alert-danger" role="alert" ng-show="errorMessage">{{errorMessage}}</div>
   <div class="alert alert-info" role="alert" ng-show="isLoading">Loading Results...</div>
 </div>
 
+<!-- Grid Layout for Photo Cards -->
 <div class="row">
   <div class="col-xs-12 col-sm-6" ng-repeat="photo in photos | filter:filterBySearch">
 		<photo-card title="photo.title" link="photo.link" img-src="photo.imgSrc" tags="photo.tags"></photo-card>
