@@ -1,0 +1,24 @@
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+		  <div class="col-xs-10">
+	      <input type="text" class="form-control" placeholder="Enter a tag..." ng-model="search">
+		  </div>
+		  <div class="col-xs-2">
+		    <button class="btn btn-success pull-right" type="button" ng-click="reload()"><i class="glyphicon glyphicon-refresh"></i></button>
+		  </div>		  
+		</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="alert alert-info" role="alert" ng-show="isLoading">Loading Results...</div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-6" ng-repeat="photo in photos | filter:filterBySearch">
+		<photo-card title="photo.title" link="photo.link" img-src="photo.imgSrc" tags="photo.tags"></photo-card>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+
+<!-- photo-card template -->
+<a href="{{link}}" target="_blank" class="thumbnail photo-card">
+  <img ng-src="{{imgSrc}}" alt="{{title}}" data-tags="{{tags}}" style="width: 100%; display: block;">
+  <div>
+  	<ul class="list-inline" ng-show="tags.length">
+  		<li><i class="glyphicon glyphicon-tags"></i></li>
+		  <li ng-repeat="tag in tags">{{tag}}</li>
+		</ul>
+	</div>
+</a>
