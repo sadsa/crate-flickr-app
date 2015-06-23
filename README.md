@@ -4,7 +4,7 @@ This project uses AngularJS to create a single page application that displays a 
 
 ## Dependencies
 
-If you are running OSX, you will need to install Compass Styles to use `grunt serve`. Install Compass via gem using `gem install compass`. Note: You may run into permission errors when executing this, use `sudo gem install compass` to grant permissions.
+If you are running OSX, you will need to install Compass Styles to use `grunt serve`. Install Compass via gem using `gem install compass`. Note: You may run into permission errors when executing this. Use `sudo gem install compass` to get past this.
 
 ## Build & development
 
